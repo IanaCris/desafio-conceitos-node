@@ -40,10 +40,6 @@ app.put("/repositories/:id", (request, response) => {
     return response.status(400).json({error: 'Repository not found'});
   }
 
-  /*if (likes) {
-    return response.status(400).json({likes: 0});
-  }*/
-
   const repository = {
     id,
     title,
